@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0b0c;
+  --color-background: #0a0b0c;
+  --color-foreground: #e8eaed;
+  --color-card: #121416;
+  --color-card-foreground: #e8eaed;
+  --color-elevated: #191c1f;
+  --color-secondary: #16191c;
+  --color-secondary-foreground: #c5cdd6;
+  --color-muted: #1c2024;
+  --color-muted-foreground: #8b919a;
+  --color-primary: #d7dbe0;
+  --color-primary-foreground: #0a0b0c;
+  --color-border: color-mix(in oklab, #e8eaed 12%, transparent);
+  --color-ring: #d7dbe0;
+  --color-ok: #7ea58a;
+  --color-warn: #c4a574;
+  --color-danger: #c45c4a;
+
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Barlow Condensed", "IBM Plex Sans", ui-sans-serif, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius: 12px;
+
+  --shadow-border: 0 0 0 1px color-mix(in oklab, #e8eaed 10%, transparent);
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --motion-quick: 150ms;
+  --motion-fast: 250ms;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html,
+  body,
+  #app {
+    min-height: 100%;
+    background: var(--color-bg);
+    color: var(--color-foreground);
+  }
+  body {
+    font-family: var(--font-sans);
+    background-image: linear-gradient(180deg, #101214 0%, #0a0b0c 28%);
+    background-attachment: fixed;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

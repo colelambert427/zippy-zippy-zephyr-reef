@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Hauler",
+      "hasCanvas": false,
+      "bodyTextLen": 1604,
+      "bodyTextHash": "4a27010b725bef150346e7b774c353aa577ce94ddad99d98a7ce2cec0d59a83c",
+      "bodyTextPrefix": "OPEN CLASS · 80 LAPS Hauler Chevrolet Silverado garage for iRaci",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Hauler",
+      "hasCanvas": false,
+      "bodyTextLen": 1594,
+      "bodyTextHash": "dfdab8a53cef95aa771276255b58363a5f6df45a2419213f3c1bd55e00b8c989",
+      "bodyTextPrefix": "OPEN CLASS · 80 LAPS Hauler Chevrolet Silverado garage for iRaci",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
